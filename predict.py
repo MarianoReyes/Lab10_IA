@@ -8,7 +8,9 @@ import numpy as np
 
 img_size = 100
 
-img = cv2.imread("gato_prueba.jpg")
+imagen = input("Ingrese el nombre de la imagen a identificar: ")
+
+img = cv2.imread(imagen)
 img = cv2.resize(img, (img_size, img_size))
 img = np.expand_dims(img, axis=0)
 
